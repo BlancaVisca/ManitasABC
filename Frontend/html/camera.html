@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/images/mano.png"/>
+    <title>Cámara de Reconocimiento</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2 id="instruction-text"></h2>
+        <div class="image-container">
+            <img id="letter-image" alt="Seña de la letra a imitar">
+        </div>
+        <video id="camera-feed" class="camera-feed" autoplay playsinline muted></video>
+        <p id="status-message">Activando la cámara...</p>
+    </div>
+    <script src="../js/camera.js" defer></script>
+</body>
+</html>

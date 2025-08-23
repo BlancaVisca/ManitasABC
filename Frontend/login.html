@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+</head>
+<body>
+    <div class="main-container">
+        
+        <div class="login-container">
+
+            <h1 class="welcome-title">Iniciar Sesión</h1>
+
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" id="username" name="username" placeholder="usuario123@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle" onclick="togglePassword()">👁</button>
+                    </div>
+                </div>
+
+                <div class="checkbox-container">
+                    <p class="welcome-subtitle">¿No tienes una cuenta? <a href="registro.html" >Registrarse</a></p>
+                </div>
+
+                <button type="submit" class="sign-in-btn">Iniciar Sesión</button>
+            </form>
+             
+            
+        </div>
+
+    </div>
+
+
+</body>
+</html>

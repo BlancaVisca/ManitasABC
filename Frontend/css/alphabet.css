@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header con logo y botón de regresar */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    gap: 80%;
+}
+
+header .logo {
+    width: 300px;  
+}
+
+header .regresar {
+    width: 50px;
+    cursor: pointer;
+}
+
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Poppins", cursive, sans-serif;
+  background: #fff;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
+                    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='none' stroke='%23ccc' stroke-width='0.5'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+.alphabet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.alphabet-container h2 {
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #333333;
+}
+
+.alphabet-container h3 {
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #333333;
+}
+
+.alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-gap: 200px;
+    row-gap: 100px;
+
+}
+
+/* Botones de tema */
+.letter-card {
+    width: 300px;
+    height: 180px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.letter-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+ }
+        
+
+/* Aplicar colores según la letra */
+.letter-card[data-letter="A"],
+.letter-card[data-letter="E"],
+.letter-card[data-letter="I"],
+.letter-card[data-letter="M"],
+.letter-card[data-letter="P"],
+.letter-card[data-letter="T"],
+.letter-card[data-letter="X"] {
+    background-color: #caa7f8; /* amarillo para vocales */
+}
+
+.letter-card[data-letter="B"],
+.letter-card[data-letter="F"],
+.letter-card[data-letter="J"],
+.letter-card[data-letter="N"],
+.letter-card[data-letter="Q"],
+.letter-card[data-letter="U"],
+.letter-card[data-letter="Y"] {
+    background-color: #f69ad7; /* amarillo para vocales */
+}
+
+.letter-card[data-letter="C"],
+.letter-card[data-letter="G"],
+.letter-card[data-letter="K"],
+.letter-card[data-letter="Ñ"],
+.letter-card[data-letter="R"],
+.letter-card[data-letter="V"],
+.letter-card[data-letter="Z"] {
+    background-color: #76d7e8; /* amarillo para vocales */
+}
+
+.letter-card[data-letter="D"],
+.letter-card[data-letter="H"],
+.letter-card[data-letter="L"],
+.letter-card[data-letter="O"],
+.letter-card[data-letter="S"],
+.letter-card[data-letter="W"] {
+    background-color: #fced75; /* amarillo para vocales */
+}
+
+
+/* Hover */
+.theme-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
